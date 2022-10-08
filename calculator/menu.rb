@@ -11,13 +11,13 @@ module Calculator
       puts "0 - Sair"
       n = gets.to_i
       if n == 1
-        biased_mean({"Tomás":10, "Iury":10, "Vini":10, "Arnaldo": 9.2}, 'Iury Tomás')
+        op.biased_mean({"Tomás":10, "Iury":10, "Vini":10, "Arnaldo": 9.2}, 'Iury Tomás')
       elsif n == 2
         puts "envie os numeros separados por espaço."
         num = gets
-        no_integers(num)
+        op.no_integers(num)
       elsif n == 3
-        filter_films('Action Fantasy War', '1985')
+        op.filter_films('Action Fantasy War', '1985')
       end
     end
   end
